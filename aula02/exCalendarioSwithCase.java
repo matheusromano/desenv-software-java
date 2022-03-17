@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class exCalendarioSwithCase {
     public static void main(String[] args) {
         System.out.println("Bem vindo ao meu Programa de Calendario");
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
+        try {
             System.out.print("Digite o numero do mês desejado: ");
             Integer num = sc.nextInt();
             switch (num) {
@@ -50,6 +51,8 @@ public class exCalendarioSwithCase {
                     break;
             }
 
+        } finally {
+            sc.close();
         }
     }
 
