@@ -6,37 +6,57 @@ public class Calculadora {
     public static void main(String[] args) {
         System.out.println("Bem vindo ao meu Programa de Operações Matemáticas");
         Scanner sc = new Scanner(System.in);
+        System.out.println("Selecione operaçao desejada: ");
+        System.out.println("1 - Somar");
+        System.out.println("2 - Subtrair");
+        System.out.println("3 - Multiplicar");
+        System.out.println("4 - Dividir");
+        int operacao = sc.nextInt();
+        System.out.println();
         System.out.println("Digite o primeiro número a ser computado: ");
         int num1 = sc.nextInt();
         System.out.println("Digite o segundo número a ser computado: ");
         int num2 = sc.nextInt();
         System.out.println();
+        switch (operacao) {
+            case 1:
+                System.out.println(soma(num1, num2));
+                break;
+            case 2:
+                System.out.println(subtracao(num1, num2));
+                break;
+            case 3:
+                System.out.println(multiplicacao(num1, num2));
+                break;
+            case 4:
+                System.out.println(divisao(num1, num2));
+                break;
+            default:
+                System.out.println("operação não encontrada");
+                break;
+        }
         sc.close();
-        soma(num1, num2);
-        subtracao(num1, num2);
-        multiplicacao(num1, num2);
-        divisao(num1, num2);
         System.out.println();
         System.out.println("fim do programa de operações matemáticas");
     }
 
-    public static void soma(int x, int y){
+    public static int soma(int x, int y){
         int result = x + y;
-        System.out.printf("A soma dos números %d e %d é: %d\n", x, y, result);
+        return result;
     }
 
-    public static void subtracao(int x, int y){
+    public static int subtracao(int x, int y){
         int result = x - y;
-        System.out.printf("A subtração dos números %d e %d é: %d\n", x, y, result);
+        return result;
     }
 
-    public static void multiplicacao(int x, int y){
+    public static int multiplicacao(int x, int y){
         int result = x * y;
-        System.out.printf("A multiplicação dos números %d e %d é: %d \n", x, y, result);
+        return result;
     }
 
-    public static void divisao(int x, int y){
-        int result = x / y;
-        System.out.printf("A divisâo dos números %d e %d é: %d\n", x, y, result);
+    public static float divisao(int x, int y){
+        float result = x / (float)y;
+        return result;
     }
 }
