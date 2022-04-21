@@ -1,3 +1,4 @@
+package aula_07_alunos;
 import java.util.Scanner;
 
 public class CadastroAzul {

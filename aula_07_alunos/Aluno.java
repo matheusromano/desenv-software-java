@@ -1,3 +1,4 @@
+package aula_07_alunos;
 public class Aluno
 {
     private int RGM;
