@@ -1,5 +1,5 @@
 package exercicioPontos;
-public class  ProgramaPrincipal {
+public class  ProgramaPrincipal23 {
     public static void main(String[] args) {
         Ponto pt1 = new Ponto();
         Ponto pt2 = new Ponto(5,10);
