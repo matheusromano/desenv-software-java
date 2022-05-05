@@ -8,13 +8,14 @@ public class ProgramaPrincipal {
         double distanciaMaisProxima = 10000000000000000d;
         
 
-        Pessoa[] pessoas = new Pessoa[6];
+        Pessoa[] pessoas = new Pessoa[7];
         pessoas[0] = new Pessoa("Felipe", 57, 'M', 90, 100, 80, 30, 70);
         pessoas[1] = new Pessoa("Maria", 25, 'F', 50, 70, 100, 50, 90);
         pessoas[2] = new Pessoa("Cristina", 30, 'F', 50, 20, 30, 70, 30);
         pessoas[3] = new Pessoa("Leonardo", 32, 'M', 80, 10, 60, 80, 50);
         pessoas[4] = new Pessoa("Joao", 27, 'M', 100, 30, 50, 100, 10);
         pessoas[5] = new Pessoa("Jessica", 45, 'F', 85, 60, 70, 50, 60);
+        pessoas[6] = new Pessoa("Matheus", 21, 'M', 100, 80, 80, 40, 60);
 
         char respostaFinal = '\u0000';
         do {
